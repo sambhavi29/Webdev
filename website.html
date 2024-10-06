@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Coding Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .signup-form {
+            margin-bottom: 40px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        iframe {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Student Coding Website</h1>
+</header>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form class="signup-form" action="submit_signup.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <h2>Topics Covered</h2>
+    <table>
+        <tr>
+            <th>Topic</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Introduction to Programming</td>
+            <td>Learn the basics of programming using C, Python, and more.</td>
+        </tr>
+        <tr>
+            <td>Data Structures</td>
+            <td>Understanding Arrays, Linked Lists, Stacks, and Queues.</td>
+        </tr>
+        <tr>
+            <td>Algorithms</td>
+            <td>Sorting, Searching, Recursion, and Dynamic Programming.</td>
+        </tr>
+        <tr>
+            <td>Object-Oriented Programming</td>
+            <td>Principles of OOP using Java and C++.</td>
+        </tr>
+    </table>
+
+    <h2>Apna College Coding Videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Apna_College_Video_URL" frameborder="0" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Another_Video_URL" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
